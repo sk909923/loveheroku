@@ -32,3 +32,5 @@ def process():
     db.session.commit()
     return render_template("result.html",result=percentage)
 
+if __name__ == "__main__":
+    app.run()
