@@ -15,9 +15,8 @@ class mytable(db.Model):
     name2=db.Column(db.String(30))
     percentage=db.Column(db.Integer)
 
-@app.route('/',methods=['GET','POST'])
+@app.route('/main',methods=['GET','POST'])
 def home():
-     
     return  render_template("index.html")
 
 @app.route('/process',methods=['POST'])
@@ -38,4 +37,4 @@ def process():
 
 
 if __name__=='__main__':
-    app.run(debug=True)
+    app.run()
