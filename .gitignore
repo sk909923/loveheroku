@@ -1,0 +1,7 @@
+flask/
+
+__pycache__/
+
+.ipynb_checkpoints/
+
+love_cal.ipynb /
