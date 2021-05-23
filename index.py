@@ -15,7 +15,7 @@ class mytable(db.Model):
     name2=db.Column(db.String(30))
     percentage=db.Column(db.Integer)
 
-@app.route('/main',methods=['GET','POST'])
+@app.route('/main',methods=['GET'])
 def home():
     return  render_template("index.html")
 
